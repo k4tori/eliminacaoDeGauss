@@ -1,0 +1,2 @@
+# eliminacaoDeGauss
+trabalho calculo numérico
