@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Métodos Numéricos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Métodos Numéricos</h1>
+
+    <div id="matrixSize">
+      <label for="rows">Número de linhas:</label>
+      <input type="number" id="rows" min="2" max="10" value="2">
+      <label for="columns">Número de colunas:</label>
+      <input type="number" id="columns" min="2" max="10" value="2">
+      <button onclick="createMatrix()">Criar Matriz</button>
+    </div>
+
+    <div id="inputContainer" style="display: none;"></div>
+
+    <div class="button">
+      <button onclick="calculateGauss()">Calcular Eliminação de Gauss</button>
+      <button onclick="calculateGaussSeidel()">Calcular Gauss-Seidel</button>
+    </div>
+
+    <div id="outputContainer" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
